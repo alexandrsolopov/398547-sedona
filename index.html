@@ -2,11 +2,11 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
   	<header class="main-header">
-  		<div class="top-menu">
   			<nav class="main-navigation">
   				<ul>
   					<li>
@@ -23,13 +23,12 @@
   					</li>
   				</ul>
   				<div class="logo">
-  					<img src="img/index-logo.png" width="368" height="204" alt="Седона">
+  					<img src="img/logo.png" width="138" height="70" alt="Седона">
   				</div>
   			</nav>
-  		</div>
   	</header>
   	<div class="intro">
-  		
+  		<img src="img/welcome.png" width="458" height="352" alt="Добро пожаловать!!!">
   	</div>
   	<main class="container">
   		<div class="container-header">
@@ -37,51 +36,56 @@
   			<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньён!</p>
   		</div>
   		
-  		<section class="features">
-  			<div class="features-item-cause1">
-  				<b>Настоящий городок</b>
-  				<p>- №1 -</p>
-  				<p>Седона не атракцион для туристов, там течет своя жизнь</p>
-  				<!-- <figure class="features-cause1">
-              <img src="img/photo-1.jpg" width="286" height="164" alt="">
-            </figure> -->
+  		<section class="features-city">
+  			<div class="city-cause">
+          <h2>Настоящий городок</h2>
+          <p>- №1 -</p>
+          <p>Седона не атракцион для   туристов, там течет своя жизнь</p>
+    		</div>
+        <div class="city-img">
+        <img src="img/city.jpg" width="800" height="257" alt="Настоящий городок">
+        </div>
+  		</section>
+    	<section class="features-waste">
+        <div class="waste-lodging">
+    			<h2>Жилье</h2>
+    			<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+    			</div>
+        <div class="waste-food">
+  			  <h2>Еда</h2>
+    			<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь</p>
   			</div>
-  			<div class="features-item-lodging">
-  				<b>Жилье</b>
-  				<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-  			</div>
-  			<div class="features-item-food">
-  				<b>Еда</b>
-  				<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь</p>
-  			</div>
-  			<div class="features-item-souvenir">
-  				<b>Сувениры</b>
-  				<p>Не только китайского но и местного производства</p>
-  			</div>
-
-  			<div class="features-item-cause2">
-  				<b>Там есть мост дьявола</b>
-  				<p>- №2 -</p>
-  				<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-  				<!-- <figure class="features-cause2">
-                <img src="img/photo-2.jpg" width="286" height="164" alt=""> 
-            </figure> -->
-  			</div>
-  			<div class="features-item-cause3">
-  				<b>Небольшая площадь</b>
-  				<p>- №3 -</p>
-  				<p>Все достопримечательности находятся очень близко</p>
-  			</div>
-  			<div class="features-item-cause4">
-  				<b>Красивая дорога</b>
-  				<p>- №4 -</p>
-  				<p>Ехать в Седону из Лас-Вегаса совсем не скучно</p>
-  			</div>
-  			<div class="features-item-cause5">
-  				<b>Мало туристов</b>
-  				<p>- №5 -</p>
-  				<p>Большинство едет в Гранд Коньон и толпится там</p>
-  			</div>
+  			<div class="waste-souvenir">
+   				<h2>Сувениры</h2>
+    			<p>Не только китайского но и местного производства</p>
+        </div>
+      </section>
+  		<section class="features-bridge">
+  			<div class="bridge-cause">
+          <h2>Там есть мост дьявола</h2>
+          <p>- №2 -</p>
+          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>  
+        </div>
+        <div class="bridge-img">
+          <img src="img/bridge.jpg" width="800" height="257" alt="Мост">
+        </div>
+      </section>
+  		<section class="features-quiet">
+        <div class="quiet-place">
+          <h2>Небольшая площадь</h2>
+          <p>- №3 -</p>
+          <p>Все достопримечательности находятся очень близко</p>
+        </div>
+        <div class="quiet-road">
+          <h2>Красивая дорога</h2>
+          <p>- №4 -</p>
+          <p>Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+        </div>
+        <div class="quiet-tourist">
+          <h2>Мало туристов</h2>
+          <p>- №5 -</p>
+          <p>Большинство едет в Гранд Коньон и толпится там</p>
+        </div>
   		</section>
   		<section class="booking">
   			<div class="booking-item-title">
@@ -125,17 +129,11 @@
 		        <a class="social-btn social-btn-youtube" href="#">Ютуб</a>
         	</section>
   			<section class="footer-copyright">
+          <p class="copyright-text">WEBSITE by</p>
   				<a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
   			</section>
   		</footer>
-
-
   	</main>
-
-
-
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
 
   </body>
 </html>

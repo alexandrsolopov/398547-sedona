@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+  	<header class="main-header">
+  			<nav class="main-navigation">
+  				<ul>
+  					<li>
+  						<a href="#">Информация</a>
+  					</li>
+  					<li>
+  						<a href="#">Фото и видео</a>
+  					</li>
+  					<li>
+  						<a href="#">Карта штата</a>
+  					</li>
+  					<li>
+  						<a href="#">Гостиницы</a>
+  					</li>
+  				</ul>
+  				<div class="logo">
+  					<img src="img/logo.png" width="138" height="70" alt="Седона">
+  				</div>
+  			</nav>
+  	</header>
+  	<main class="container">
+  		<section class="selection">
+  		<!--Фоновое изображение через CSS вставлять?-->
+  			<div class="selection-infrastructure">
+  				<ul class="infrastructure-option">
+  					<li class="infrastructure-option-item">
+  						<h2 class="infrastructure-option-caption">Инфрастуктура:</h2>
+  					</li>
+  					<li class="infrastructure-option-item">
+  						<input type="checkbox" name="pool" id="swimming-pool" checked>
+  						<label for="swimming-pool">Бассейн</label>
+  					</li>
+  					<li class="infrastructure-option-item">
+  						<input type="checkbox" name="parking" id="parking-place">
+  						<label for="parking-place">Парковка</label>
+  					</li>
+  					<li class="infrastructure-option-item">
+  						<input type="checkbox" name="wi-fi" id="wireless">
+  						<label for="wireless">Wi-Fi</label>
+  					</li>
+  				</ul>
+  			</div>
+  			<div class="selection-lodging">
+  				<ul class="lodging-option">
+  					<li class="lodging-option-item">
+  						<h2 class="lodging-option-caption">Тип жилья</h2>
+  					</li>
+  					<li class="lodging-option-item">
+  						<input type="checkbox" name="hotel" id="hostelry" checked>
+  						<label for="hostelry">Гостиница</label>
+  					</li>
+  					<li class="lodging-option-item">
+  						<input type="checkbox" name="motel" id="boarding-house" checked>
+  						<label for="boarding-house">Мотель</label>
+  					</li>
+  					<li class="lodging-option-item">
+  						<input type="checkbox" name="apartments" id="apartment" checked>
+  						<label for="apartment">Апартаменты</label>
+  					</li>
+  				</ul>
+  			</div>
+  			<div class="crosshead">
+  				<h2 class="crosshead-caption">Стоимость в сутки (р):</h2>
+  				<div class="crosshead-table">
+  					<label class="price-min">От<input type="text" name="min" value="От 0"> </label>
+  					<label class="price-max">До<input type="text" name="max" value="До 3000"> </label>
+  					<!--Не совсем понял. От и ДО должны оставться в ячейках? Или быть как по умолчанию? Если не по умолчанию, то возможно их с помощью CSS подвинуть внутрь ячейки? -->
+  				</div>
+  				<div class="skroll">
+				  <button type="button" class="skroll-left"></button>
+				  <button type="button" class="skroll-right"></button>
+				  <div class="skroll-field"></div>
+				</div>
+				<input class="show" type="submit" value="Показать">
+  			</div>
+  		</section>
+  		<section class="result">
+  			<div class="sorting">
+  				<ul class="sorting-search">
+  					<li class="sorting-search-caption">Найдено: 3</li>
+  					<li class="sorting-search-item">
+  						<span>Сортировка:</span>
+  					</li>
+  					<li class="sorting-search-item">
+  						<a href="#">По цене</a>
+  					</li>
+  					<li class="sorting-search-item">
+  						<a href="#">По типу</a>
+  					</li>
+  					<li class="sorting-search-item">
+  						<a href="#">По рейтенгу</a>
+  					</li>
+  					<!--Треугольнички больше-меньше тоже через CSS вставлять?-->
+  				</ul>
+  			</div>
+  		</section>
+  		<section class="lodging-result">
+  			<article class="amara">
+  				<div class="amara-img">
+  					<img src="img/amara.png" width="135" height="90" alt="Amara Resort & Spa">
+  				</div>
+  				<div class="amara-specification">
+  					<h2>Amara Resort & Spa</h2>
+  					<p class="specification-lodging">Гостиница</p>
+  					<p class="specification-price">От 4000 р.</p>
+  					<a class="specification-details" href="#">Подробнее</a>
+  					<a class="specification-booking" href="#">Забронировать</a>
+  					<p class="specification-rating">Рейтинг: 8,5</p>
+  				</div>
+  			</article>
+  			<article class="desert">
+  				<div class="desert-img">
+  					<img src="img/desert.png" width="135" height="90" alt="Desert Quail Inn">
+  				</div>
+  				<div class="desert-specification">
+  					<h2>Desert Quail Inn</h2>
+  					<p class="specification-lodging">Мотель</p>
+  					<p class="specification-price">От 3000 р.</p>
+  					<a class="specification-details" href="#">Подробнее</a>
+  					<a class="specification-booking" href="#">Забронировать</a>
+  					<p class="specification-rating">Рейтинг: 8,9</p>
+  				</div>
+  			</article>
+  			<article class="villas">
+  				<div class="villas-img">
+  					<img src="img/villas.png" width="135" height="90" alt="Villas at Poco Diablo">
+  				</div>
+  				<div class="villas-specification">
+  					<h2>Villas at Poco Diablo</h2>
+  					<p class="specification-lodging">Апартаменты</p>
+  					<p class="specification-price">От 2000 р.</p>
+  					<a class="specification-details" href="#">Подробнее</a>
+  					<a class="specification-booking" href="#">Забронировать</a>
+  					<p class="specification-rating">Рейтинг: 9,2</p>
+  				</div>
+  			</article>
+  		</section>
+  		<footer class="main-footer">
+  			<section class="footer-hashtag">
+  				<h2 class="hashtag">#VisitSedona</h2>
+  			</section>
+  			<section class="footer-social">
+		        <a class="social-btn social-btn-twitter" href="#">Твитер</a>
+		        <a class="social-btn social-btn-facebook" href="#">Фейсбук</a>
+		        <a class="social-btn social-btn-youtube" href="#">Ютуб</a>
+        	</section>
+  			<section class="footer-copyright">
+          <p class="copyright-text">WEBSITE by</p>
+  				<a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+  			</section>
+  		</footer>
+  	</main>
+
+  </body>
+</html>
